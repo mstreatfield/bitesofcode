@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NexsysWindow</class>
+ <widget class="QMainWindow" name="NexsysWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>664</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NexsysWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>664</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="ui_file_menu">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="ui_newfile_act"/>
+    <addaction name="ui_newdir_act"/>
+    <addaction name="ui_newlink_act"/>
+    <addaction name="separator"/>
+    <addaction name="ui_viewfile_act_2"/>
+    <addaction name="ui_editfile_act"/>
+    <addaction name="ui_copy_act"/>
+    <addaction name="ui_move_act"/>
+    <addaction name="separator"/>
+    <addaction name="ui_quit_act"/>
+   </widget>
+   <widget class="QMenu" name="ui_edit_menu">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="ui_boardcut_act"/>
+    <addaction name="ui_boardcopy_act"/>
+    <addaction name="ui_boardpaste_act"/>
+    <addaction name="ui_renamefile_act"/>
+    <addaction name="ui_deletefile_act"/>
+    <addaction name="separator"/>
+    <addaction name="ui_selectall_act"/>
+    <addaction name="ui_selectnone_act"/>
+    <addaction name="ui_selectinvert_act"/>
+    <addaction name="separator"/>
+    <addaction name="ui_fileprops_act"/>
+   </widget>
+   <widget class="QMenu" name="ui_view_menu">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <addaction name="ui_viewdetails_act"/>
+    <addaction name="ui_viewbrief_act"/>
+    <addaction name="separator"/>
+    <addaction name="ui_viewhidden_act"/>
+    <addaction name="separator"/>
+    <addaction name="ui_viewrefresh_act"/>
+   </widget>
+   <widget class="QMenu" name="ui_go_menu">
+    <property name="title">
+     <string>&amp;Go</string>
+    </property>
+    <addaction name="ui_goback_act"/>
+    <addaction name="ui_goforward_act"/>
+    <addaction name="ui_goup_act"/>
+    <addaction name="ui_goroot_act"/>
+    <addaction name="ui_gohome_act"/>
+   </widget>
+   <widget class="QMenu" name="ui_tools_menu">
+    <property name="title">
+     <string>&amp;Tools</string>
+    </property>
+    <addaction name="ui_search_act"/>
+    <addaction name="ui_filefind_act"/>
+    <addaction name="separator"/>
+    <addaction name="ui_terminal_act"/>
+    <addaction name="ui_terminalhere_act"/>
+   </widget>
+   <widget class="QMenu" name="ui_settings_menu">
+    <property name="title">
+     <string>&amp;Settings</string>
+    </property>
+    <addaction name="ui_showfuncs_act"/>
+    <addaction name="ui_showcmd_act"/>
+    <addaction name="ui_showstatus_act"/>
+    <addaction name="ui_showtools_act"/>
+    <addaction name="separator"/>
+    <addaction name="ui_configshortcuts_act"/>
+    <addaction name="ui_configtools_act"/>
+    <addaction name="ui_configapp_act"/>
+   </widget>
+   <widget class="QMenu" name="ui_window_menu">
+    <property name="title">
+     <string>&amp;Window</string>
+    </property>
+    <addaction name="ui_tabnew_act"/>
+    <addaction name="ui_tabcopy_act"/>
+    <addaction name="ui_tabclose_act"/>
+    <addaction name="ui_tabnext_act"/>
+    <addaction name="ui_tabprev_act"/>
+    <addaction name="separator"/>
+    <addaction name="ui_swappanels_act"/>
+    <addaction name="ui_swapsides_act"/>
+    <addaction name="ui_verticalmode_act"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="ui_helpbook_act"/>
+    <addaction name="ui_helpsdk_act"/>
+    <addaction name="ui_helpabout_act"/>
+   </widget>
+   <addaction name="ui_file_menu"/>
+   <addaction name="ui_edit_menu"/>
+   <addaction name="ui_view_menu"/>
+   <addaction name="ui_go_menu"/>
+   <addaction name="ui_tools_menu"/>
+   <addaction name="ui_settings_menu"/>
+   <addaction name="ui_window_menu"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionFoo">
+   <property name="text">
+    <string>Foo</string>
+   </property>
+  </action>
+  <action name="ui_newfile_act">
+   <property name="text">
+    <string>&amp;New Text File...</string>
+   </property>
+  </action>
+  <action name="ui_newdir_act">
+   <property name="text">
+    <string>New &amp;Directory...</string>
+   </property>
+  </action>
+  <action name="ui_newlink_act">
+   <property name="text">
+    <string>New &amp;Link...</string>
+   </property>
+  </action>
+  <action name="ui_viewfile_act_2">
+   <property name="text">
+    <string>&amp;View File</string>
+   </property>
+  </action>
+  <action name="ui_editfile_act">
+   <property name="text">
+    <string>Edit &amp;File</string>
+   </property>
+  </action>
+  <action name="ui_copy_act">
+   <property name="text">
+    <string>&amp;Copy</string>
+   </property>
+  </action>
+  <action name="ui_move_act">
+   <property name="text">
+    <string>&amp;Move</string>
+   </property>
+  </action>
+  <action name="ui_quit_act">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="ui_boardcut_act">
+   <property name="text">
+    <string>&amp;Cut to Clipboard</string>
+   </property>
+  </action>
+  <action name="ui_boardcopy_act">
+   <property name="text">
+    <string>&amp;Copy to Clipboard</string>
+   </property>
+  </action>
+  <action name="ui_boardpaste_act">
+   <property name="text">
+    <string>&amp;Paste from Clipboard</string>
+   </property>
+  </action>
+  <action name="ui_renamefile_act">
+   <property name="text">
+    <string>&amp;Rename</string>
+   </property>
+  </action>
+  <action name="ui_deletefile_act">
+   <property name="text">
+    <string>&amp;Delete</string>
+   </property>
+  </action>
+  <action name="ui_selectall_act">
+   <property name="text">
+    <string>&amp;Select All</string>
+   </property>
+  </action>
+  <action name="ui_selectnone_act">
+   <property name="text">
+    <string>U&amp;nselect All</string>
+   </property>
+  </action>
+  <action name="ui_selectinvert_act">
+   <property name="text">
+    <string>&amp;Invert Selection</string>
+   </property>
+  </action>
+  <action name="ui_fileprops_act">
+   <property name="text">
+    <string>Properties</string>
+   </property>
+  </action>
+  <action name="ui_viewdetails_act">
+   <property name="text">
+    <string>&amp;Detailed View</string>
+   </property>
+  </action>
+  <action name="ui_viewbrief_act">
+   <property name="text">
+    <string>&amp;Brief View</string>
+   </property>
+  </action>
+  <action name="ui_viewhidden_act">
+   <property name="text">
+    <string>Show &amp;Hidden Files</string>
+   </property>
+  </action>
+  <action name="ui_viewrefresh_act">
+   <property name="text">
+    <string>&amp;Refresh</string>
+   </property>
+  </action>
+  <action name="ui_goback_act">
+   <property name="text">
+    <string>&amp;Back</string>
+   </property>
+  </action>
+  <action name="ui_goforward_act">
+   <property name="text">
+    <string>&amp;Forward</string>
+   </property>
+  </action>
+  <action name="ui_goup_act">
+   <property name="text">
+    <string>&amp;Up</string>
+   </property>
+  </action>
+  <action name="ui_goroot_act">
+   <property name="text">
+    <string>&amp;Root</string>
+   </property>
+  </action>
+  <action name="ui_gohome_act">
+   <property name="text">
+    <string>&amp;Home</string>
+   </property>
+  </action>
+  <action name="ui_search_act">
+   <property name="text">
+    <string>&amp;Search</string>
+   </property>
+  </action>
+  <action name="ui_filefind_act">
+   <property name="text">
+    <string>&amp;Find in Files</string>
+   </property>
+  </action>
+  <action name="ui_terminal_act">
+   <property name="text">
+    <string>Start &amp;Terminal</string>
+   </property>
+  </action>
+  <action name="ui_terminalhere_act">
+   <property name="text">
+    <string>Start Terminal &amp;Here</string>
+   </property>
+  </action>
+  <action name="ui_showfuncs_act">
+   <property name="text">
+    <string>Show &amp;Function Buttons</string>
+   </property>
+  </action>
+  <action name="ui_showcmd_act">
+   <property name="text">
+    <string>Show &amp;Command Line</string>
+   </property>
+  </action>
+  <action name="ui_showstatus_act">
+   <property name="text">
+    <string>Show St&amp;atus Bar</string>
+   </property>
+  </action>
+  <action name="ui_showtools_act">
+   <property name="text">
+    <string>Show Tool &amp;Bar</string>
+   </property>
+  </action>
+  <action name="ui_configshortcuts_act">
+   <property name="text">
+    <string>Configure &amp;Shortcuts</string>
+   </property>
+  </action>
+  <action name="ui_configtools_act">
+   <property name="text">
+    <string>Configure &amp;Toolbar</string>
+   </property>
+  </action>
+  <action name="ui_configapp_act">
+   <property name="text">
+    <string>Configure &amp;Nexsys</string>
+   </property>
+  </action>
+  <action name="ui_tabnew_act">
+   <property name="text">
+    <string>&amp;New Tab</string>
+   </property>
+  </action>
+  <action name="ui_tabcopy_act">
+   <property name="text">
+    <string>&amp;Duplicate Current Tab</string>
+   </property>
+  </action>
+  <action name="ui_tabclose_act">
+   <property name="text">
+    <string>&amp;Close Current Tab</string>
+   </property>
+  </action>
+  <action name="ui_tabnext_act">
+   <property name="text">
+    <string>N&amp;ext Tab</string>
+   </property>
+  </action>
+  <action name="ui_tabprev_act">
+   <property name="text">
+    <string>P&amp;revious Tab</string>
+   </property>
+  </action>
+  <action name="ui_swappanels_act">
+   <property name="text">
+    <string>Swap &amp;Panels</string>
+   </property>
+  </action>
+  <action name="ui_swapsides_act">
+   <property name="text">
+    <string>Swap &amp;Sides</string>
+   </property>
+  </action>
+  <action name="ui_verticalmode_act">
+   <property name="text">
+    <string>&amp;Vertical Mode</string>
+   </property>
+  </action>
+  <action name="ui_helpbook_act">
+   <property name="text">
+    <string>Nexsys &amp;Handbook</string>
+   </property>
+  </action>
+  <action name="ui_helpsdk_act">
+   <property name="text">
+    <string>Nexsys &amp;SDK</string>
+   </property>
+  </action>
+  <action name="ui_helpabout_act">
+   <property name="text">
+    <string>&amp;About Nexsys</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
